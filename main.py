@@ -3,6 +3,14 @@ from datetime import datetime, timedelta
 from fastapi import FastAPI, HTTPException
 
 app = FastAPI(title="Siddhanta Mahashakti Engine - Ultimate")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], # यह सभी बाहरी ऐप्स को अनुमति देता है
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 # --- 1. मौलिक डेटा और बीज-संस्कार (Constants) ---
 REVOLUTIONS = {
