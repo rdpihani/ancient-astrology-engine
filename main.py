@@ -33,7 +33,7 @@ APOGEES = {"sun": 77.23, "mars": 130.03, "mercury": 220.45, "jupiter": 171.3, "v
 UJJAIN_LON = 75.7684
 
 # अपना गुप्त पासवर्ड यहाँ बदलें (Acode वाले पासवर्ड से मैच होना चाहिए)
-MY_SECRET_KEY = "000000" 
+MY_SECRET_KEY = "773384" 
 
 class SiddhantaMaster:
     def __init__(self, lat, lon, dt):
